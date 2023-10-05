@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffe</title>
+
+  <!-- phopor icon -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Tailwind-flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+  <!-- import css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sub-Index.css">
+
+
+</head>
+<body>
+    <!-- bagian navbar -->
+    
+      <nav class="bg-transparent-05 shadow-md fixed w-full z-50 rounded-md">
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+          
+          <!-- title page -->
+          <a href="#" class="flex items-center md:ml-24">
+            <img src="../img/cup.png" alt="" width="30px" height="30px" >
+              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">CoKa</span>
+          </a>
+          
+          <!-- list Button -->
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-800 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-amber-700" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+          </button>
+
+          <!-- list menu nav -->
+          <div class="hidden w-full md:block md:w-auto  md:mr-20" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0">
+              <li class="md:px-5 md:py-1 md:bg-amber-700 rounded-full">
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-white  bg-amber-800 rounded-lg md:bg-transparent md:p-0" aria-current="page">Home</a>
+              </li>
+              <li class="md:py-1 rounded-full">
+                <a href="About.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">About</a>
+              </li>
+              <li class="md:py-1 rounded-full">
+                <a href="profile.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">Profile</a>
+              </li>
+              <li class="md:py-1 rounded-full pr-4">
+                <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+
+      <!-- bagian main -->
+      
+  <!-- priview cafe -->
+  <div class="container flex flex-col md:flex md:flex-row">
+
+    <div class="order-2 md:order-1">
+      
+      <div class="mt-24 flex flex-col md:w-[420px]">
+
+        <div class="absolute bg-transparent-05 p-3 left-16  flex-row rounded-2xl align-middle hidden md:flex ">
+          <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+            <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+          </div>
+          <p class="ml-5 mt-2">
+            Kenapa Harus Ke Cafe kami?
+          </p>
+        </div>
+        <p style=" writing-mode: vertical-lr;" class="absolute left-32 bg-transparent-05 rounded-2xl py-3 top-48 hidden md:flex hover:bg-amber-600 hover:text-white">klik icon</p>
+
+        <button data-popover-target="popover-top1" type="button" class="text-gray-800 bg-transparent-05 hover:bg-amber-700  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-44 mt-28 w-44 hover:text-white">
+          Tetap terkoneksi
+        </button>
+
+        <div data-popover id="popover-top1" role="tooltip" class="absolute z-10 invisible inline-block w-44 text-sm text-gray-500 transition-opacity duration-300 bg-transparent-04 border-gray-200 rounded-lg shadow-sm opacity-0 ">
+          <div class="px-3 py-2 bg-transparent-03 border-b border-gray-200 rounded-t-lg">
+            <h3 class="font-bold text-gray-900 ">Free WiFi</h3>
+          </div>
+          <div class="px-3 py-2">
+              <p class="text-gray-800 font-medium">Gratis akses internet sepuasnya buat temenin ngopimu</p>
+          </div>
+            
+          </div>
+          
+          <img src="../img/arrow-down.png" alt="" width="150px" class="absolute arrowLeft imageArrow top-56 left-44 -z-10 hidden md:block">
+          
+          <button data-popover-target="popover-top2" type="button" class="text-gray-800 bg-transparent-05 hover:bg-amber-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-20 mt-24 w-44 hover:text-white ">
+            Kenyamanan
+          </button>
+          <div data-popover id="popover-top2" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-transparent-04 border border-gray-200 rounded-lg shadow-sm opacity-0 ">
+              <div class="px-3 py-2 bg-transparent-05 border-b border-gray-200 rounded-t-lg">
+                <h3 class="font-semibold text-gray-900 ">Nyaman tentunya</h3>
+              </div>
+              <div class="px-3 py-2">
+                <p class="text-gray-800 font-medium">Terdapat banyak kursi nyaman nan empuk buat kamu yang cari kenyamanan
+                </p>
+              </div>
+              
+          </div>
+            <img src="../img/arrow-down.png" alt="" width="150px" class="absolute imageArrow top-[360px] left-24 -z-10 hidden md:block">
+            
+            
+            <button data-popover-target="popover-top3" type="button" class="text-gray-800 bg-transparent-05 hover:bg-amber-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-44 mt-24 w-44 hover:text-white ">Aesthetic</button>
+            <div data-popover id="popover-top3" role="tooltip" class="absolute z-10 invisible inline-block w-56 text-sm text-gray-500 transition-opacity duration-300 bg-transparent-04 border border-gray-200 rounded-lg shadow-sm opacity-0 ">
+                <div class="px-3 py-2 bg-transparent-05 border-b border-gray-200 rounded-t-lg">
+                  <h3 class="font-semibold text-gray-900 ">Spot Foto</h3>
+                </div>
+                <div class="px-3 py-2">
+                  <p class="text-gray-800 font-medium">Tersedia tempat foto aesthetic yang siap menghiasi story sosmed mu hari ini</p>
+                </div>
+               
+              </div>
+              <img src="../img/arrow-down.png" alt="" width="150px" class="absolute imageArrow arrowLeft top-[490px] left-28 -z-10 hidden md:block">
+              
+              <button data-popover-target="popover-top4" type="button" class="text-gray-800 bg-transparent-05 hover:bg-amber-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-16 mt-24 w-44 hover:text-white ">Ramah Dikantong</button>
+              <div data-popover id="popover-top4" role="tooltip" class="absolute z-10 invisible inline-block w-44 text-sm text-gray-500 transition-opacity duration-300 bg-transparent-04 border border-gray-200 rounded-lg shadow-sm opacity-0 ">
+                <div class="px-3 py-2 bg-transparent-05 border-b border-gray-200 rounded-t-lg">
+                    <h3 class="font-semibold text-gray-900 ">Harganya terjangkau</h3>
+                  </div>
+                  <div class="px-3 py-2 ">
+                    <p class="text-gray-800 font-medium">Kamu bisa beli coffe mulai dari 14k saja</p>
+                  </div>
+                  
+              </div>
+              <img src="../img/arrow-down.png" alt="" width="150px" class="absolute imageArrow arrowLeft top-[490px] left-28 -z-10 hidden md:block">
+                
+                
+      </div>
+    </div>
+
+      <!-- coffe review -->
+
+      <div class=" md:flex md:flex-col md:ml-6 order-1 md:order-2 ">
+        
+        <div class="flex justify-center mt-24">
+
+          <div class="w-full max-w-md bg-transparent-05 border border-gray-200 rounded-lg shadow md:hidden">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-row items-center pb-10">
+              <img class=" h-20 w-28 ml-5 rounded-full shadow-lg" src="../img/logo coffe.avif" />
+              <div class="flex flex-col ml-5"> 
+                <h5 class="mb-1 text-xl font-medium text-gray-900">Buruan Ke Cafe kami</h5>
+                <span class="text-sm text-gray-700">Banyak Menu Coffe Pilihan dengan Harga ramah di kantong</span>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- list coffe -->
+        <div class="mt-6 grid grid-cols-2 gap-y-2 sm:grid-cols-3 sm:ml-16 md:gap-4 md:ml-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 2xl: 2xl:ml-32 2xl:mt-32 ml-5">
+
+  
+          <div class="w-44 max-w-md bg-transparent-05 border border-gray-200 rounded-lg shadow hidden md:block">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/Americano.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Americano</h5>
+              <span class="text-sm text-gray-700">Price 40k</span>
+              
+            </div>
+          </div>
+  
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow hidden md:block">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/cappucino.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Cappucino</h5>
+              <span class="text-sm text-gray-700">Price 30k</span>
+              
+            </div>
+          </div>
+  
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow hidden sm:block">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/latte.jpeg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Latte</h5>
+              <span class="text-sm text-gray-700">Price 35k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow hidden sm:block">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/espreso.jpeg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Espreso</h5>
+              <span class="text-sm text-gray-700">Price 45k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow ">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/cold brew.jpeg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">cold brew</h5>
+              <span class="text-sm text-gray-700">Price 60k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow ">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/Cortado.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Cortado</h5>
+              <span class="text-sm text-gray-700">Price 25k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow ">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/flate white.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Flate white</h5>
+              <span class="text-sm text-gray-700">Price 35k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow ">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/mocha.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Mocha</h5>
+              <span class="text-sm text-gray-700">Price 55k</span>
+              
+            </div>
+          </div>
+
+          <div class="w-44 max-w-sm bg-transparent-05 border border-gray-200 rounded-lg shadow hidden 2xl:flex ">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10 ">
+              <img class="w-32 h-32 mb-3 rounded-full shadow-lg" src="../img/Ristretto.jpg" />
+              <h5 class="mb-1 text-xl font-medium text-gray-900">Ristretto</h5>
+              <span class="text-sm text-gray-700">Price 60k</span>
+              
+            </div>
+          </div>
+
+           <!-- next button -->
+           <div class="flex  absolute bottom-6 justify-center align-middle">
+
+            <!-- left -->
+            <div class="md:hidden bg-transparent-03 rounded-full p-2 pl-1 w-8 hover:bg-amber-700 hover:text-white">
+              <a href="../html/index.html">
+                <svg class="w-4 h-4  mx-1 arrowLeft " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+              </a>
+            </div>
+            <div class="md:hidden bg-transparent-03 rounded-full p-2 pl-1 w-16 mx-1">
+            </div>
+            <!-- right -->
+            <div class="md:hidden bg-transparent-03 rounded-full p-2 pl-1 w-8 hover:text-white hover:bg-amber-700">
+              <a href="../html/index3.html">
+                <svg class="w-4 h-4  mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+  
+    </div>
+  </div>
+    
+    
+      <!-- end container -->
+    
+</div>
+      
+      
+      
+      
+      
+      
+      <!-- js -->
+      <script src="../js/index.js"></script>
+      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+</body>
+</html>

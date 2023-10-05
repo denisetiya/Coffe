@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoKa</title>
+
+    <!-- phopor icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- tailwind flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+
+  <!-- import css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sub-Index.css">
+
+</head>
+<body>
+  <!-- bagian navbar -->
+
+      <nav class="bg-transparent-05 shadow-md ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+          <a href="#" class="flex items-center md:ml-24">
+              <img src="../img/cup.png" alt="" width="30px" height="30px">
+              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">CoKa</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-800 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-amber-700" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto  md:mr-20" id="navbar-default">
+            <!-- list menu nav -->
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+              <li class="md:py-1 rounded-full md:ml-2">
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">Home</a>
+              </li>
+              <li class="md:py-1 rounded-full">
+                <a href="About.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">About</a>
+              </li>
+              <li class="md:py-1 rounded-full">
+                <a href="profile.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-800 md:p-0">Profile</a>
+              </li>
+              <li class="md:px-5 md:py-1 md:bg-amber-700 rounded-full">
+                <a href="contact.html" class="block py-2 pl-3 pr-4 text-white  bg-amber-800 rounded-lg md:bg-transparent md:p-0" aria-current="page">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+
+  <!-- bagian main -->
+<div class="flex justify-center align-middle flex-col">
+
+    <div class="flex justify-center align-middle ">
+
+      <form class="bg-transparent-03 p-6 mt-20 rounded-2xl w-80 sm:w-[400px] md:[500px] lg:w-[600px] xl:w-[800px]">
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
+          <input type="email" id="email" class="bg-transparent border-b-4 border-t-0 border-l-0 border-r-0 border-gray-300 text-gray-900 text-sm focus:ring-transparent focus:border-2 focus:rounded-xl focus:border-gray-300 block w-full p-2.5 placeholder:text-gray-700" placeholder="masukan Email mu" required>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Pesan</label>
+          <textarea id="message" rows="4" class="bg-transparent border-b-4 border-t-0 border-l-0 border-r-0 border-gray-300 text-gray-900 text-sm focus:ring-transparent focus:border-2 focus:rounded-xl focus:border-gray-300 block w-full p-2.5 placeholder:text-gray-700" placeholder="Masukan Pesanmu..."></textarea>
+          
+        </div>
+      
+        <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-amber-700 hover:bg-amber-800 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full md:w-40" type="button">
+          Kirim
+        </button>
+        
+        
+
+      </form>
+    </div>
+
+    <!-- modal alert -->
+    <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-md max-h-full">
+          <div class="relative bg-transparent-05 rounded-lg shadow ">
+
+            <div class="w-full">
+
+              <button type="button" class="absolute top-3 right-2.5 text-gray-900 bg-transparent hover:bg-amber-800 hover:text-white rounded-lg text-sm w-8 h-8 pl-2 " data-modal-hide="popup-modal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+
+              <div class="p-6 text-center ">
+                <h3 class="mb-5 text-lg font-normal text-gray-900 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" >
+                      <path d="M 43.753906 6.4023438 C 42.53621 6.3489969 41.294792 6.712898 40.271484 7.46875 L 37.525391 9.4960938 L 25 18.755859 L 12.591797 9.5839844 A 1.0001 1.0001 0 0 0 11.949219 9.3007812 L 12.199219 9.3007812 L 9.734375 7.4765625 C 8.7104042 6.7188363 7.4671493 6.3528895 6.2480469 6.40625 C 5.0289444 6.4596105 3.8349462 6.9314667 2.9082031 7.8457031 C 1.7309454 9.0063798 1 10.629831 1 12.410156 L 1 15.84375 A 1.0001 1.0001 0 0 0 1 16.138672 L 1 39.5 C 1 41.421188 2.5788117 43 4.5 43 L 12 43 A 1.0001 1.0001 0 0 0 13 42 L 13 25.373047 L 24.40625 33.804688 A 1.0001 1.0001 0 0 0 25.59375 33.804688 L 37 25.373047 L 37 42 A 1.0001 1.0001 0 0 0 38 43 L 45.5 43 C 47.421188 43 49 41.421188 49 39.5 L 49 16.119141 A 1.0001 1.0001 0 0 0 49 15.859375 L 49 12.410156 C 49 10.6517 48.290455 9.0357821 47.128906 7.8730469 C 47.095336 7.8394769 47.084086 7.83018 47.097656 7.84375 A 1.0001 1.0001 0 0 0 47.091797 7.8378906 C 46.165242 6.9256756 44.971603 6.4556905 43.753906 6.4023438 z M 43.644531 8.4003906 C 44.400835 8.4300436 45.134049 8.7168876 45.689453 9.2636719 C 45.708363 9.2823439 45.722171 9.2964424 45.712891 9.2871094 C 46.50934 10.084374 47 11.188613 47 12.410156 L 47 15.496094 L 39 21.408203 L 39 11 A 1.0001 1.0001 0 0 0 38.996094 10.898438 L 41.458984 9.078125 A 1.0001 1.0001 0 0 0 41.460938 9.078125 C 42.109578 8.598977 42.888228 8.3707375 43.644531 8.4003906 z M 6.3574219 8.40625 C 7.1145694 8.37661 7.8958927 8.6037105 8.5449219 9.0839844 L 11.003906 10.902344 A 1.0001 1.0001 0 0 0 11 11 L 11 21.408203 L 3 15.496094 L 3 12.410156 C 3 11.174482 3.5017577 10.068855 4.3125 9.2695312 C 4.8677569 8.7217677 5.6002743 8.4358895 6.3574219 8.40625 z M 37 12.371094 L 37 22.886719 L 25 31.755859 L 13 22.886719 L 13 12.373047 L 24.40625 20.804688 A 1.0001 1.0001 0 0 0 25.59375 20.804688 L 37 12.371094 z M 3 17.982422 L 11 23.896484 L 11 41 L 4.5 41 C 3.6591883 41 3 40.340812 3 39.5 L 3 17.982422 z M 47 17.982422 L 47 39.5 C 47 40.340812 46.340812 41 45.5 41 L 39 41 L 39 23.896484 L 47 17.982422 z"></path>
+                      </svg>
+                    Kirim Pesan?
+                  </h3>
+                  <button data-modal-hide="popup-modal" type="button" class="text-white bg-amber-600 hover:bg-amber-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                      Ya
+                  </button>
+                  <button data-modal-hide="popup-modal" type="button" class="text-gray-900 bg-transparent-05 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Tidak</button>
+              </div>
+          </div>
+      </div>
+  </div>
+        
+  <!-- sosmed -->
+
+  <nav class="flex justify-center align-middle mt-6  " aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3 w-80 sm:w-96 bg-transparent-04  pl-4 sm:pl-14 py-2 rounded-full">
+      <li class="inline-flex items-center">
+        <a href="https://api.whatsapp.com/send/?phone=6283179823209&text&type=phone_number&app_absent=0" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-700">
+          Whatsapp
+        </a>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <a href="https://www.instagram.com/denisetiya_/" class="ml-1 text-sm font-medium text-gray-700 hover:text-amber-700 md:ml-2 ">Instagram</a>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <a href="https://x.com/denisetiya9?t=f6Gf7rTff3z9NIdI8FnNhg&s=09" class="ml-1 text-sm font-medium text-gray-700 hover:text-amber-700 md:ml-2 ">Twitter</a>
+        </div>
+      </li>
+ 
+
+    </ol>
+  </nav>
+</div>
+
+
+
+  <!-- js -->
+  <script src="../js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+</body>
+</html>
