@@ -3,6 +3,12 @@
 *{
   font-family: 'Poppins', sans-serif !important;
   overflow: hidden;
+  
+}
+@media(max-width:370px){
+  *{
+    overflow:scroll;
+  }
 }
 body{
   background-image: url(../img/bg-web.jpg);
@@ -10,7 +16,6 @@ body{
   background-size: cover;
   height: 100vh;
   backdrop-filter: blur(5px);
- 
 }
 .bg-transparent-05{
   background-color: rgba(255,255,255,0.5);
@@ -37,3 +42,4 @@ body{
 .arrowLeft{
   transform: scaleX(-1);
 }
+
