@@ -19,22 +19,22 @@ body{
 }
 .bg-transparent-05{
   background-color: rgba(255,255,255,0.7);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 
 }
 .bg-transparent-03{
   background-color: rgba(255,255,255,0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
  
 }
 .bg-transparent-04{
   background-color: rgba(255,255,255,0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 
 }
 .bg-amber-c2{
   background-color: rgba(142, 75, 16,0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 .imageArrow{
   filter: invert(99%) sepia(100%) saturate(6%) hue-rotate(131deg) brightness(103%) contrast(103%);
